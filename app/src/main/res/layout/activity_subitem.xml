@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.azure.home.todolist.SubitemActivity">
+
+    <RelativeLayout
+        android:id="@+id/subrelativeLayout"
+        android:layout_width="361dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/subYear"
+            android:layout_width="368dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/subProfessor"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="419dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_above="@+id/subDay"
+            android:layout_marginBottom="0dp"
+            android:layerType="software"
+            android:src="@drawable/drawable_dash_line" />
+
+        <TextView
+            android:id="@+id/subProfessor"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subDay"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="364dp" />
+
+        <TextView
+            android:id="@+id/subDay"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <TextView
+            android:id="@+id/subName"
+            android:layout_width="361dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center|left"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
